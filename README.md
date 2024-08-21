@@ -6,18 +6,18 @@
 
 | Name | Description | Domain | Quantity | Accuracy | Relevance |
 |------|-------------|--------|----------|----------|-----------|
-| [glaiveai/glaive-function-calling-v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | One duplicate data in the first 10 entries | Function calling | 113K | 9/10 | 4.5 |
-| [Salesforce/xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) | Answers are function names and parameter lists. Contains functions with ambiguous parameter types and trivial functions | Function calling | 60K | 10/10 | 4.5 |
-| [Gorilla OpenFunctions-v2](https://github.com/ShishirPatil/gorilla/tree/main/data) | GitHub JSON format data, no Hugging Face dataset. Uses AST to determine if API calls are correct | Function calling | 65K | 10/10 | 5 |
-| [ise-uiuc/Magicoder-OSS-Instruct-75K](https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K) | Question 2 provides an answer, Question 3 does not provide partial implementation | Code | 75.2K | 9/10 | 3.5 |
-| [RLHFlow/CodeUltraFeedback-standard](https://huggingface.co/datasets/RLHFlow/CodeUltraFeedback-standard) | RLH format, including chosen and rejected | Code | 38.4k | 8/10 | 4 |
-| [codeparrot/apps](https://huggingface.co/datasets/codeparrot/apps) | | Code | 10K | | |
-| [iamtarun/python_code_instructions_18k_alpaca](https://huggingface.co/datasets/iamtarun/python_code_instructions_18k_alpaca) | | Code | 18.6K | | |
-| [meta-math/MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA) | Question 4 does not provide public machine expressions | Math | 395k | 9.5/10 | 4.5 |
-| [MathInstruct](https://huggingface.co/datasets/TIGER-Lab/MathInstruct) | Contains 13 datasets, such as camel math, etc. Question 2 has no candidates, but the answer is correct. Question 3 does not provide a specific answer. Question 5 does not provide a specific answer. Most do not provide specific answers | Math | 262K | 9/10 | 3 |
-| [camel-ai/math](https://huggingface.co/datasets/camel-ai/math) | | Math | 50k | 10/10 | 4.5 |
-| [xinlai/Math-Step-DPO-10K](https://huggingface.co/datasets/xinlai/Math-Step-DPO-10K) | | Math | 10.8k | | |
-| [openai/gsm8k](https://huggingface.co/datasets/openai/gsm8k) | Often used as a benchmark | Math | train 7.47k test 1.32K | | |
+| [glaiveai/glaive-function-calling-v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | One duplicate data in the first 10 entries | Function calling | 113K | 4.5 | 4.5 |
+| [Salesforce/xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) | Answers are function names and parameter lists. Contains functions with ambiguous parameter types and trivial functions | Function calling | 60K | 5 | 4.5 |
+| [Gorilla OpenFunctions-v2](https://github.com/ShishirPatil/gorilla/tree/main/data) | GitHub JSON format data, no Hugging Face dataset. Uses AST to determine if API calls are correct | Function calling | 65K | 5 | 5 |
+| [ise-uiuc/Magicoder-OSS-Instruct-75K](https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K) | Question 2 provides an answer, Question 3 does not provide partial implementation | Code | 75.2K | 4.5 | 3.5 |
+| [RLHFlow/CodeUltraFeedback-standard](https://huggingface.co/datasets/RLHFlow/CodeUltraFeedback-standard) | RLHF format, including chosen and rejected | Code | 38.4k | 4 | 4 |
+| [codeparrot/apps](https://huggingface.co/datasets/codeparrot/apps) | Relatively complicated. Items too long to check. | Code | 10K | N/A | N/A |
+| [iamtarun/python_code_instructions_18k_alpaca](https://huggingface.co/datasets/iamtarun/python_code_instructions_18k_alpaca) | Relatively simple. | Code | 18.6K | 5 | 4 |
+| [meta-math/MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA) | Question 4 does not provide public machine expressions | Math | 395k | 4.75 | 4.5 |
+| [MathInstruct](https://huggingface.co/datasets/TIGER-Lab/MathInstruct) | Contains 13 datasets, such as camel math, etc. Question 2 has no candidates, but the answer is correct. Question 3 does not provide a specific answer. Question 5 does not provide a specific answer. Most do not provide specific answers | Math | 262K | 4.5 | 3 |
+| [camel-ai/math](https://huggingface.co/datasets/camel-ai/math) | Dataset is composed of 50K problem-solution pairs obtained using GPT-4 | Math | 50k | 5 | 4.5 |
+| [xinlai/Math-Step-DPO-10K](https://huggingface.co/datasets/xinlai/Math-Step-DPO-10K) | RLHF format, including chosen and rejected. Use step-by-step prompt. `initial_reason_steps` includes preliminary calculation and hints. | Math | 10.8k | 4.5 | 3.5 |
+| [openai/gsm8k](https://huggingface.co/datasets/openai/gsm8k) | Commonly used for many benchmarks, including the [LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard). `Answer` includes `<>` formated calculation. | Math | train 7.47k test 1.32K | 5 | 4.5 |
 
 
 
