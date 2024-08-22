@@ -8,7 +8,7 @@
 |------|-------------|--------|----------|----------|-----------|
 | [glaiveai/glaive-function-calling-v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | One duplicate data in the first 10 entries | Function calling | 113K | 4.5 | 4.5 |
 | [Salesforce/xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) | Answers are function names and parameter lists. Contains functions with ambiguous parameter types and trivial functions | Function calling | 60K | 5 | 4.5 |
-| [Gorilla OpenFunctions-v2](https://github.com/ShishirPatil/gorilla/tree/main/data) | GitHub JSON format data, no Hugging Face dataset. Uses AST to determine if API calls are correct | Function calling | 65K | 5 | 5 |
+| [Gorilla OpenFunctions-v2](https://github.com/ShishirPatil/gorilla/tree/main/data) | GitHub JSON format data, no Hugging Face dataset. Uses AST to determine if API calls are correct | Function calling | 17K | 5 | 5 |
 | [ise-uiuc/Magicoder-OSS-Instruct-75K](https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K) | Question 2 provides an answer, Question 3 does not provide partial implementation | Code | 75.2K | 4.5 | 3.5 |
 | [RLHFlow/CodeUltraFeedback-standard](https://huggingface.co/datasets/RLHFlow/CodeUltraFeedback-standard) | RLHF format, including chosen and rejected | Code | 38.4k | 4 | 4 |
 | [codeparrot/apps](https://huggingface.co/datasets/codeparrot/apps) | Relatively complicated. Items too long to check. | Code | 10K | N/A | N/A |
