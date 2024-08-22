@@ -1,0 +1,59 @@
+Include keywords Jack, technology in your response.
+In your response, the word 'that' should appear 3 times.
+Do not include keywords 'space' in the response.
+In your response, the letter 'E' should appear 5 times.
+Your ENTIRE response should be in English, no other language is allowed.
+Your response should contain 3 paragraphs. You separate paragraphs using the markdown divider: * * *
+Answer with at least 30 words.
+Answer with around 40 words.
+Answer with at most 100 sentences.
+There should be 3 paragraphs. Paragraphs and only paragraphs are separated with each other by two line breaks. The 3-th paragraph must start with word 'Please'.
+At the end of your response, please explicitly add a postscript starting with * * * * * *
+The response must contain at least 4 placeholders represented by square brackets, such as [1st Lincoln Ave Urbana IL 61801].
+Your answer must contain exactly 3 bullet points. Use the markdown bullet points such as: * This is a point.
+Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>.
+Answer with one of the following options: yes, no, neutral
+Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*
+Your response must have 3 sections. Mark the beginning of each section with "- - - - - -".
+Entire output should be wrapped in JSON format.
+First, repeat the request without change, then give your answer (do not say anything before repeating the request; the request you need to repeat does not include this sentence)
+Give two different responses. Responses and only responses should be separated by 6 asterisk symbols: ******.
+Your entire response should be in English, capital letters only.
+Your entire response should be in English, and in all lowercase letters. No capital letters are allowed.
+In your response, words with all capital letters should appear at least 5 times.
+In your response, words with all capital letters should appear around 7 times.
+In your response, words with all capital letters should appear at most 9 times.
+Finish your response with this exact phrase 'see you next time'. No other words should follow this phrase.
+Wrap your entire response with double quotation marks.
+In your entire response, refrain from the use of any commas.
+Answer with words that begin with the letter 'B'
+Use only palindromes
+Use only words with double letters (e.g., "bookkeeper")
+Use only onomatopoeia
+Answer with a single sentence that is exactly 100 words long
+Use no words containing the letter 'E'
+Translate your answer into emojis
+Use only the 1000 most common English words
+Use words that end with '-ing'
+Use only military lingo
+Respond with a haiku (5-7-5 syllable structure)
+Answer in the form of a sonnet (14 lines with 10 syllables each)
+Use only monosyllabic words
+Answer with words in alphabetical order
+Use no adjectives or adverbs
+Respond with a six-word story
+Include at least three rhyming pairs
+Use alliteration throughout your answer
+Write the response in future tense only
+Use only the first half of the alphabet (A-M)
+Use only questions to form your reply
+Use only words that start and end with the same letter
+Write the response in Morse code
+Use only words that are colors
+Use only the second half of the alphabet (N-Z)
+Answer with each sentence decreasing in word count
+Respond with a list of bullet points
+Answer with a sequence of puns
+Answer with emoji only
+Use only words that have an X in them
+Answer with each word starting with the next letter of the alphabet
