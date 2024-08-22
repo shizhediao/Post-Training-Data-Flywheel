@@ -1,11 +1,33 @@
 # post-training-handbook
 
+
+## Goal
+We aim to provide the best recipes to find, select, and synthesize high-quality and large-quantity data for post-training your LLMs.
+
+## Introduction
+The datasets are sourced from various repositories and platforms, including Hugging Face, GitHub, and other sources. The datasets are carefully curated and evaluated to ensure high quality and relevance for post-training LLMs.
+
+
+
+# Quality Check
+- Domain: we are only concerned about the following tasks: instruction following, coding, math. Datasets other than those in English are not considered.
+- Data source: only keep GPT-4 generated data. Drop inferior data sources (gpt-3.5-turbo).
+- popular dataset, download > 1K.
+- Accuracy (%): randomly sample 20 for instruction tuning dataset and 10 for other domains. Check the quality manually and provide quality signal = x / 20
+- Relevance Score (1-5):
+    - 5: Directly corresponds to one of [IFEval*, MTBench, AGIEval*, AlpacaEval, …] (Overfitting)
+    - 4: Generally have instruction following format and GPT-4 / human level response.
+    - 3: Most have instruction following format and correct response.
+    - 2: Have major flaws (e.g. irrelevant) but maybe useful
+    - 1: low quality or potential harmful impact
+
+
 ## Dataset
 
 ### Function Calling, Code, Math
 
-| Name | Description | Domain | Quantity | Accuracy | Relevance |
-|------|-------------|--------|----------|----------|-----------|
+| Name | Description | Domain | Quantity | Accuracy | Relevance | License |
+|------|-------------|--------|----------|----------|-----------|-----------|
 | [glaiveai/glaive-function-calling-v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | One duplicate data in the first 10 entries | Function calling | 113K | 4.5 | 4.5 |
 | [Salesforce/xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) | Answers are function names and parameter lists. Contains functions with ambiguous parameter types and trivial functions | Function calling | 60K | 5 | 4.5 |
 | [Gorilla OpenFunctions-v2](https://github.com/ShishirPatil/gorilla/tree/main/data) | GitHub JSON format data, no Hugging Face dataset. Uses AST to determine if API calls are correct | Function calling | 17K | 5 | 5 |
@@ -57,15 +79,3 @@
 | [mosaicml/instruct-v3](https://huggingface.co/datasets/mosaicml/instruct-v3) | Each piece of data has a marked source. This is an aggregate dataset comprised of Dolly, HFRLHF (derived from Databricks Dolly) Self-Instruct (Yizhong Wang) and HH (Anthropic Harmless) datasets, combined with Competition Math, Duorc, CoT GSM8k, Qasper, Quality, Summ Screen FD and Spider. | Instruct | train 56.2k test 6.81k |  | 2 | not GPT-4 level, irrelevant task |
 | [OpenHermes2.5](https://hf.co/datasets/teknium/OpenHermes-2.5) | Airoboros 2.2 + CamelAI Domain Expert Datasets (Physics, Math, Chemistry & Biology) + Fatidici4K-orca CoT + GPT4 Collective Cognition (09-10-2023 ~ CoT) + Alpaca GPT4 + Evol Instruct 70K && 140K + Glaive Code Assistant + GPT4-LLM + GPTeacher + Medical Tasks + MetaMath 40k + SlimOrca 550K + Platypus + ShareGPT (GPT4-Only) + Unnatural Instructions GPT4 | Chat instruct, including coding, math, etc. | 1M |  |  | naive mixture of multiple datasets Filtering included removal of OpenAI refusals, disclaimers, and "As an AI" type examples and more |
 | [bilexi/Bitext-customer-support-llm-chatbot-training-dataset](https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset) | The user provides questions, and the response is a prompt from the assistant | Instruct | 26.9k |  | 2 | irrelevant (Customer Service) |
-
-# Quality Check
-- Domain: we are only concerned about the following tasks: instruction following, coding, math. Datasets other than those in English are not considered.
-- Data source: only keep GPT-4 generated data. Drop inferior data sources (gpt-3.5-turbo).
-- popular dataset, download > 1K.
-- Accuracy (%): randomly sample 20 for instruction tuning dataset and 10 for other domains. Check the quality manually and provide quality signal = x / 20
-- Relevance Score (1-5):
-    - 5: Directly corresponds to one of [IFEval*, MTBench, AGIEval*, AlpacaEval, …] (Overfitting)
-    - 4: Generally have instruction following format and GPT-4 / human level response.
-    - 3: Most have instruction following format and correct response.
-    - 2: Have major flaws (e.g. irrelevant) but maybe useful
-    - 1: low quality or potential harmful impact
