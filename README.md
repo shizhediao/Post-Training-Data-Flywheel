@@ -26,7 +26,7 @@ The datasets are sourced from various repositories and platforms, including Hugg
 
 ### Function Calling, Code, Math
 
-| Name | Description | Domain | Quantity | Accuracy | Relevance | Notes for Quality | License |
+| Name | Description | Domain (Math/Coding/Instruct/Chat/Safety) | Quantity | Accuracy | Relevance | Notes for Quality | License |
 |------|-------------|--------|----------|----------|-----------|-----------|-----------|
 | [glaiveai/glaive-function-calling-v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | No duplicate in first 10. Wide variety of tasks. | Function calling | 113K | 4.5 | 4.5 |    |  apache-2.0  |
 | [Salesforce/xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) | Answers are function names and parameter lists. Contains functions with ambiguous parameter types and trivial functions | Function calling | 60K | 5 | 4.5 |    |  cc-by-4.0  |
@@ -47,7 +47,7 @@ The datasets are sourced from various repositories and platforms, including Hugg
 
 ### Instruction Following
 
-| Name | Description | Domain (Math/Coding/Instruct/Chat) | Number of Samples | Accuracy | Relevance | Note for Quality | License |
+| Name | Description | Domain (Math/Coding/Instruct/Chat/Safety) | Number of Samples | Accuracy | Relevance | Note for Quality | License |
 |------|-------------|-----------------------------------|-------------------|----------|-----------|------------------|-----------|
 | [Open-Orca/1million-gpt-4](https://huggingface.co/datasets/Open-Orca/1million-gpt-4) | FLAN collection which has been augmented by submitting the listed question to GPT-4. Many questions supply a passage as context. | instruct | 1M | 5 | 4 |    |    |
 | [SlimOrca](https://huggingface.co/datasets/Open-Orca/SlimOrca) | This release provides an efficient means of reacting our OpenOrca dataset with using larger slices of our data, while only including ~500k GPT-4 completions. Many questions supply a passage as context | Instruct (1-turn chat) | 518k | 5 | 4 |    |    |
@@ -81,3 +81,12 @@ The datasets are sourced from various repositories and platforms, including Hugg
 | [mosaicml/instruct-v3](https://huggingface.co/datasets/mosaicml/instruct-v3) | Each piece of data has a marked source. This is an aggregate dataset comprised of Dolly, HFRLHF (derived from Databricks Dolly) Self-Instruct (Yizhong Wang) and HH (Anthropic Harmless) datasets, combined with Competition Math, Duorc, CoT GSM8k, Qasper, Quality, Summ Screen FD and Spider. Brief prompt template included with every instruction. | Instruct | train 56.2k test 6.81k |  | 2 | not GPT-4 level, irrelevant task |    |
 | [OpenHermes2.5](https://hf.co/datasets/teknium/OpenHermes-2.5) | Airoboros 2.2 + CamelAI Domain Expert Datasets (Physics, Math, Chemistry & Biology) + Fatidici4K-orca CoT + GPT4 Collective Cognition (09-10-2023 ~ CoT) + Alpaca GPT4 + Evol Instruct 70K && 140K + Glaive Code Assistant + GPT4-LLM + GPTeacher + Medical Tasks + MetaMath 40k + SlimOrca 550K + Platypus + ShareGPT (GPT4-Only) + Unnatural Instructions GPT4 | Chat instruct, including coding, math, etc. | 1M |  |  | naive mixture of multiple datasets Filtering included removal of OpenAI refusals, disclaimers, and "As an AI" type examples and more |    |
 | [bilexi/Bitext-customer-support-llm-chatbot-training-dataset](https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset) | The user provides questions, and the response is a prompt from the assistant | Instruct | 26.9k |  | 2 | irrelevant (Customer Service) |    |
+
+### Safety
+
+| Name | Description | Domain (Math/Coding/Instruct/Chat/Safety) | Number of Samples | Accuracy | Relevance | Note for Quality | License |
+|------|-------------|-----------------------------------|-------------------|----------|-----------|------------------|-----------|
+| [Anthropic/hh-rlhf(harmless-base)](https://huggingface.co/datasets/Anthropic/hh-rlhf) | RLHF format, collected by Anthropic's 52B base model, but has many errors and incorrect annotations. | safety | 42.5k | 2 | 2 |  There are many errors in the annotations, many "chosen" responses are still not safe. |  mit  |
+| [Anthropic_HH_Golden](https://huggingface.co/datasets/Unified-Language-Model-Alignment/Anthropic_HH_Golden) | RLHF format, Extending the harmless dataset of Anthropic/hh-rlhf, but rewrite the chosen response with gpt-4. | safety | 42.5k | 5 | 5 |    |  apache-2.0  |
+| [nvidia/Aegis-AI-Content-Safety-Dataset-1.0](https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0) | The datasets contains prompt, response and safety labels. Prompts are from Antropic's HH-RLHF dataset, and reponses are generated from Mistral-7B-v0.1. The human annotation is high-quality, but the prompts and reponses are concatenated, without clear spliting symbol. | safety | 10.8k | 5 | 4 |    |  cc-by-4.0  |
+
