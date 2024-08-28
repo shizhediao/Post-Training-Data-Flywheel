@@ -1,5 +1,4 @@
-# post-training-handbook
-
+# Post-training-Data-Flywheel
 
 ## Goal
 We aim to provide the best recipes to find, select, and synthesize high-quality and large-quantity data for post-training your LLMs.
@@ -8,18 +7,17 @@ We aim to provide the best recipes to find, select, and synthesize high-quality 
 The datasets are sourced from various repositories and platforms, including Hugging Face, GitHub, and other sources. The datasets are carefully curated and evaluated to ensure high quality and relevance for post-training LLMs.
 
 
-
 # Quality Check
-- Domain: we are only concerned about the following tasks: instruction following, coding, math. Datasets other than those in English are not considered.
+- Domain: we are only concerned about the following tasks: instruction following, coding, and math. Datasets other than those in English are not considered.
 - Data source: only keep GPT-4 generated data. Drop inferior data sources (gpt-3.5-turbo).
 - popular dataset, download > 1K.
-- Accuracy (%): randomly sample 20 for instruction tuning dataset and 10 for other domains. Check the quality manually and provide quality signal = x / 20
+- Accuracy (%): randomly sample 20 for the instruction tuning dataset and 10 for other domains. Check the quality manually and provide quality signal = x / 20
 - Relevance Score (1-5):
     - 5: Directly corresponds to one of [IFEval*, MTBench, AGIEval*, AlpacaEval, …] (Overfitting)
     - 4: Generally have instruction following format and GPT-4 / human level response.
     - 3: Most have instruction following format and correct response.
-    - 2: Have major flaws (e.g. irrelevant) but maybe useful
-    - 1: low quality or potential harmful impact
+    - 2: Have major flaws (e.g. irrelevant) but may be useful
+    - 1: low quality or potentially harmful impact
 
 
 ## Dataset
