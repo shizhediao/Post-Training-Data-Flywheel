@@ -1,13 +1,27 @@
 # Post-Training-Data-Flywheel
 
 ## Goal
-We aim to provide the best recipes to find, select, and synthesize high-quality and large-quantity data for post-training your LLMs.
+We aim to provide the best references to search, select, and synthesize high-quality and large-quantity data for post-training your LLMs.
 
 ## Introduction
-The datasets are sourced from various repositories and platforms, including Hugging Face, GitHub, and other sources. The datasets are carefully curated and evaluated to ensure high quality and relevance for post-training LLMs.
+
+There are two contributions in this repository:
+1. Data Generation: We provide the data generation process for two important domains: instruction following and function calling.
+2. High-quality Datasets: We provide a list of high-quality datasets for post-training LLMs in the domains of instruction following, coding, and math. We provide a quality check for the datasets.
+3. According to the quality check, we carefully curated a new data collection for post-training LLMs. The datasets are carefully collected and evaluated to ensure high quality and relevance for post-training.
 
 
-# Quality Check
+## Download
+You can download the datasets directly from the [Hugging Face Hub](https://huggingface.co/Post-training-Data-Flywheel).
+There are two versions:
+1. Flywheel-v1: A small and highly curated datasets.
+2. Flywheel-v2: A large and diverse datasets. (recommended)
+
+## Data Generation
+We provide the data generation process for two important domains: [instruction following](./IF-generation/) and [function calling](./FC-generation/).
+
+
+## Quality Check
 - Domain: we are only concerned about the following tasks: instruction following, coding, and math. Datasets other than those in English are not considered.
 - Data source: only keep GPT-4 generated data. Drop inferior data sources (gpt-3.5-turbo).
 - popular dataset, download > 1K.
