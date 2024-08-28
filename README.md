@@ -1,4 +1,4 @@
-# Post-training-Data-Flywheel
+# Post-Training-Data-Flywheel
 
 ## Goal
 We aim to provide the best recipes to find, select, and synthesize high-quality and large-quantity data for post-training your LLMs.
