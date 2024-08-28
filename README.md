@@ -1,14 +1,18 @@
 # Post-Training-Data-Flywheel
 
+<p align="center">
+<img src="./assets/flywheel.jpeg"  width="256">
+</p>
+
 ## Goal
 We aim to provide the best references to search, select, and synthesize high-quality and large-quantity data for post-training your LLMs.
 
 ## Introduction
 
-There are two contributions in this repository:
+There are three contributions in this repository:
 1. Data Generation: We provide the data generation process for two important domains: instruction following and function calling.
-2. High-quality Datasets: We provide a list of high-quality datasets for post-training LLMs in the domains of instruction following, coding, and math. We provide a quality check for the datasets.
-3. According to the quality check, we carefully curated a new data collection for post-training LLMs. The datasets are carefully collected and evaluated to ensure high quality and relevance for post-training.
+2. Dataset Compilation: We collected and compiled a list of high-quality datasets for post-training LLMs in the domains of instruction following, coding, and math. We provide a quality check for the datasets.
+3. Dataset Curation: According to the quality check, we carefully curated a new dataset for post-training LLMs. The datasets are carefully collected and evaluated to ensure high quality and relevance for post-training.
 
 
 ## Download
