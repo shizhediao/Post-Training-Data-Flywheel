@@ -11,6 +11,6 @@ jobs:
     name: A job to automate contrib in readme
     steps:
       - name: Contribute List
-        uses: shizhediao/Post-Training-Data-Flywheel
+        uses: shizhediao/Post-Training-Data-Flywheel@main
         env:
           GITHUB_TOKEN: ${{ secrets.CONTRIBUTORS_TOKEN }}
