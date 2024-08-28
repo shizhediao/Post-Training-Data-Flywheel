@@ -104,5 +104,6 @@ We provide the data generation process for two important domains: [instruction f
 
 ## Contributors
 
-<!-- readme: collaborators,contributors -start -->
-<!-- readme: collaborators,contributors -end -->
+<a href="https://github.com/eryajf/learn-github/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=shizhediao/Post-Training-Data-Flywheel" />
+</a>
