@@ -42,7 +42,7 @@ We provide the data generation process for two important domains: [instruction f
 
 ### Function Calling, Code, Math
 
-| Name | Description | Domain (Math/Coding/Instruct/Chat/Safety) | Quantity | Accuracy | Relevance | Notes for Quality | License |
+| Name | Description | Domain | Quantity | Accuracy | Relevance | Notes for Quality | License |
 |------|-------------|--------|----------|----------|-----------|-----------|-----------|
 | [glaiveai/glaive-function-calling-v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | No duplicate in first 10. Wide variety of tasks. | Function calling | 113K | 4.5 | 4.5 |    |  apache-2.0  |
 | [Salesforce/xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) | Answers are function names and parameter lists. Contains functions with ambiguous parameter types and trivial functions | Function calling | 60K | 5 | 4.5 |    |  cc-by-4.0  |
@@ -63,7 +63,7 @@ We provide the data generation process for two important domains: [instruction f
 
 ### Instruction Following
 
-| Name | Description | Domain (Math/Coding/Instruct/Chat/Safety) | Number of Samples | Accuracy | Relevance | Note for Quality | License |
+| Name | Description | Domain | Number of Samples | Accuracy | Relevance | Note for Quality | License |
 |------|-------------|-----------------------------------|-------------------|----------|-----------|------------------|-----------|
 | [Open-Orca/1million-gpt-4](https://huggingface.co/datasets/Open-Orca/1million-gpt-4) | FLAN collection which has been augmented by submitting the listed question to GPT-4. Many questions supply a passage as context. | instruct | 1M | 5 | 4 |    |    |
 | [SlimOrca](https://huggingface.co/datasets/Open-Orca/SlimOrca) | This release provides an efficient means of reacting our OpenOrca dataset with using larger slices of our data, while only including ~500k GPT-4 completions. Many questions supply a passage as context | Instruct (1-turn chat) | 518k | 5 | 4 |    |    |
