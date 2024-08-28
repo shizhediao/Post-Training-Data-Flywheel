@@ -102,3 +102,7 @@ We provide the data generation process for two important domains: [instruction f
 | [Anthropic_HH_Golden](https://huggingface.co/datasets/Unified-Language-Model-Alignment/Anthropic_HH_Golden) | RLHF format, Extending the harmless dataset of Anthropic/hh-rlhf, but rewrite the chosen response with gpt-4. | safety | 42.5k | 5 | 5 |    |  apache-2.0  |
 | [nvidia/Aegis-AI-Content-Safety-Dataset-1.0](https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0) | The datasets contains prompt, response and safety labels. Prompts are from Antropic's HH-RLHF dataset, and reponses are generated from Mistral-7B-v0.1. The human annotation is high-quality, but the prompts and reponses are concatenated, without clear spliting symbol. | safety | 10.8k | 5 | 4 |    |  cc-by-4.0  |
 
+## Contributors
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
