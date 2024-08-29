@@ -18,8 +18,8 @@ There are three contributions in this repository:
 ## Download
 You can download the datasets directly from the [Hugging Face Hub](https://huggingface.co/Post-training-Data-Flywheel).
 There are two versions:
-1. Flywheel-v1: A small and highly curated datasets.
-2. Flywheel-v2: A large and diverse datasets. (recommended)
+1. [Flywheel-v1](https://huggingface.co/datasets/Post-training-Data-Flywheel/flywheel-v1): A small and highly curated datasets.
+2. [Flywheel-v2](https://huggingface.co/datasets/Post-training-Data-Flywheel/flywheel-v2): A large and diverse datasets. (recommended)
 
 ## Data Generation
 We provide the data generation process for two important domains: [instruction following](./IF-generation/) and [function calling](./FC-generation/).
