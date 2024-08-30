@@ -58,6 +58,7 @@ We provide the data generation process for two important domains: [instruction f
 | [openai/gsm8k](https://huggingface.co/datasets/openai/gsm8k) | Commonly used for many benchmarks, including the [LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard). `Answer` includes `<>` formated calculation. | Math | train 7.47k test 1.32K | 5 | 4.5 |    |  mit  |
 | [bigcode/self-oss-instruct-sc2-exec-filter-50k](https://huggingface.co/datasets/bigcode/self-oss-instruct-sc2-exec-filter-50k) | Final self-alignment training dataset for StarCoder2-Instruct. | Code | 50.7k |  |  |  | odc-by
 | [theblackcat102/evol-codealpaca-v1](https://huggingface.co/datasets/theblackcat102/evol-codealpaca-v1) | Similar to [ise-uiuc/Magicoder-Evol-Instruct-110K](https://huggingface.co/datasets/ise-uiuc/Magicoder-Evol-Instruct-110K). | Code | 111k |  |  |  | apache-2.0
+| [NousResearch/hermes-function-calling-v1](https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1) | Function calling split contains tool call and response, compared to the singleturn split. | Function Calling | 1893 |  | 4.5 |  | apache-2.0
 
 
 
