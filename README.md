@@ -43,12 +43,12 @@ We provide the data generation process for two important domains: [instruction f
 
 ### Function Calling
 
-| Name | Description | Domain | Quantity | Accuracy | Relevance | Notes for Quality | License |
-|------|-------------|--------|----------|----------|-----------|-------------------|---------|
-| [glaiveai/glaive-function-calling-v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | <details><summary>Click to expand</summary>No duplicate in first 10. Wide variety of tasks.</details> | Function calling | 113K | 4.5 | 4.5 |    |  apache-2.0  |
-| [Salesforce/xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) | <details><summary>Click to expand</summary>Answers are function names and parameter lists. Contains functions with ambiguous parameter types and trivial functions</details> | Function calling | 60K | 5 | 4.5 |    |  cc-by-4.0  |
-| [Gorilla OpenFunctions-v2](https://github.com/ShishirPatil/gorilla/tree/main/data) | <details><summary>Click to expand</summary>GitHub JSON format data, no Hugging Face dataset. Uses AST to determine if API calls are correct</details> | Function calling | 17K | 5 | 5 |    |  Apache-2.0  |
-| [NousResearch/hermes-function-calling-v1](https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1) | <details><summary>Click to expand</summary>Function calling split contains tool call and response, compared to the singleturn split.</details> | Function Calling | 1893 |  | 4.5 |  | apache-2.0 |
+| Name | Description | Quantity | Accuracy | Relevance | Notes for Quality | License |
+|------|-------------|----------|----------|-----------|-------------------|---------|
+| [glaiveai/glaive-function-calling-v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | <details><summary>Click to expand</summary>No duplicate in first 10. Wide variety of tasks.</details> | 113K | 4.5 | 4.5 |    |  apache-2.0  |
+| [Salesforce/xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) | <details><summary>Click to expand</summary>Answers are function names and parameter lists. Contains functions with ambiguous parameter types and trivial functions</details> | 60K | 5 | 4.5 |    |  cc-by-4.0  |
+| [Gorilla OpenFunctions-v2](https://github.com/ShishirPatil/gorilla/tree/main/data) | <details><summary>Click to expand</summary>GitHub JSON format data, no Hugging Face dataset. Uses AST to determine if API calls are correct</details> | 17K | 5 | 5 |    |  Apache-2.0  |
+| [NousResearch/hermes-function-calling-v1](https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1) | <details><summary>Click to expand</summary>Function calling split contains tool call and response, compared to the singleturn split.</details> | 1893 |  | 4.5 |  | apache-2.0 |
 
 ### Code
 
