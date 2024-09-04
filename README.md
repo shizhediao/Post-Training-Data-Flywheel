@@ -15,6 +15,10 @@ There are three contributions in this repository:
 3. Dataset Curation: According to the quality check, we carefully curated a new dataset for post-training LLMs. The datasets are carefully collected and evaluated to ensure high quality and relevance for post-training.
 
 
+<span style="color: red;">Disclaimer: Although we provide the license information below, this information is obtained from the original repository. 
+However, we also noticed that some datasets, while claimed to be open, actually utilize commercial models. 
+Therefore, please double-check carefully before using them, especially if you intend to use them for commercial purposes or something similar.</span>​
+
 ## Download
 You can download the datasets directly from the [Hugging Face Hub](https://huggingface.co/Post-training-Data-Flywheel).
 There are two versions:
