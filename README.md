@@ -15,6 +15,10 @@ There are three contributions in this repository:
 3. Dataset Curation: According to the quality check, we carefully curated a new dataset for post-training LLMs. The datasets are carefully collected and evaluated to ensure high quality and relevance for post-training.
 
 
+<span style="color: red;"><b>Disclaimer: Although we provide the license information below, this information is obtained from the original repository. 
+However, we also noticed that some datasets, while claimed to be open, actually utilize commercial models. 
+Therefore, please double-check carefully before using them, especially if you intend to use them for commercial purposes or something similar.</b></span>​
+
 ## Download
 You can download the datasets directly from the [Hugging Face Hub](https://huggingface.co/Post-training-Data-Flywheel).
 There are two versions:
@@ -47,8 +51,8 @@ We provide the data generation process for two important domains: [instruction f
 |------|-------------|----------|----------|-----------|-------------------|---------|
 | [glaiveai/glaive-function-calling-v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2) | <details><summary>Click to expand</summary>No duplicate in first 10. Wide variety of tasks.</details> | 113K | 4.5 | 4.5 |    |  apache-2.0  |
 | [Salesforce/xlam-function-calling-60k](https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k) | <details><summary>Click to expand</summary>Answers are function names and parameter lists. Contains functions with ambiguous parameter types and trivial functions</details> | 60K | 5 | 4.5 |    |  cc-by-4.0  |
-| [Gorilla OpenFunctions-v2](https://github.com/ShishirPatil/gorilla/tree/main/data) | <details><summary>Click to expand</summary>GitHub JSON format data, no Hugging Face dataset. Uses AST to determine if API calls are correct</details> | 17K | 5 | 5 |    |  Apache-2.0  |
-| [NousResearch/hermes-function-calling-v1](https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1) | <details><summary>Click to expand</summary>Function calling split contains tool call and response, compared to the singleturn split.</details> | 1893 |  | 4.5 |  | apache-2.0 |
+| [Gorilla apibench v1.0](https://github.com/ShishirPatil/gorilla/tree/main/data) | <details><summary>Click to expand</summary>GitHub JSON format data, no Hugging Face dataset. Uses AST to determine if API calls are correct</details> | 17K | 5 | 5 |    |  Apache-2.0  |
+| [NousResearch/hermes-function-calling-v1](https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1) | <details><summary>Click to expand</summary>Function calling split contains tool call and response, compared to the singleturn split.</details> | 1893 ('func_calling' subclass)|  | 4.5 |  | apache-2.0 |
 
 ### Code
 
